@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,rev=0;
+    int a,rev=0,r,b;
     scanf("%d",&a);
     b=a;
     while(a>0){
-        c=a%10;
-        rev=rev*10+c;
+        r=a%10;
+        rev=rev*10+r;
         a=a/10;
     }
-    if(rev==b){
-        printf("True");
+    if(b==rev){
+        printf("Palindrome");
     }
     else{
-        printf("False");
+        printf("Not Palindrome");
     }
-    
 }
